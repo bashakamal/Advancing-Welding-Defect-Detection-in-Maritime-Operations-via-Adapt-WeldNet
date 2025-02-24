@@ -92,10 +92,19 @@ This repository includes various deep learning models for welding defect detecti
 
 ## XAI Metric: Region-based Recall
 
-The **Region-based Recall** metric measures how well the Grad-CAM-generated heatmap aligns with the ground truth defect regions. It calculates the proportion of the ground truth mask covered by the predicted Grad-CAM mask.
+T### Region-based Recall
 
-### Formula:
-\[ \text{Recall} = \frac{| \text{Intersection}(\text{CAM Mask}, \text{GT Mask}) |}{| \text{GT Mask} |} \]
+The **Region-based Recall** metric evaluates how well the Grad-CAM mask overlaps with the ground truth mask. It is defined as:
+
+$$
+\text{Recall} = \frac{| M_{\text{pred}} \cap M_{\text{gt}} |}{| M_{\text{gt}} |}
+$$
+
+Where:
+- \( M_{\text{pred}} \) is the predicted Grad-CAM mask.
+- \( M_{\text{gt}} \) is the ground truth mask.
+- \( | M_{\text{pred}} \cap M_{\text{gt}} | \) represents the number of overlapping pixels between the predicted and ground truth masks.
+- \( | M_{\text{gt}} | \) represents the total number of pixels in the ground truth mask.
 
 where:
 - **CAM Mask** represents the Grad-CAM activation map.
