@@ -101,10 +101,10 @@ $$
 $$
 
 Where:
-- \( M_{\text{pred}} \) is the predicted Grad-CAM mask.
-- \( M_{\text{gt}} \) is the ground truth mask.
-- \( | M_{\text{pred}} \cap M_{\text{gt}} | \) represents the number of overlapping pixels between the predicted and ground truth masks.
-- \( | M_{\text{gt}} | \) represents the total number of pixels in the ground truth mask.
+- **M_pred**: The predicted Grad-CAM mask.
+- **M_gt**: The ground truth mask.
+- **| M_pred ∩ M_gt |**: The number of overlapping pixels between the predicted and ground truth masks.
+- **| M_gt |**: The total number of pixels in the ground truth mask.
 
 where:
 - **CAM Mask** represents the Grad-CAM activation map.
