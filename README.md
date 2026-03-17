@@ -172,3 +172,16 @@ This metric is a step toward making deep learning models more interpretable and 
 ## License
 This project is open-source under the MIT License.
 
+
+## Cite 
+```
+@article{Basha2025AdvancingWD,
+  title={Advancing Welding Defect Detection in Maritime Operations via Adapt-WeldNet and Defect Detection Interpretability Analysis},
+  author={Kamal Basha and Athira Nambiar},
+  journal={ArXiv},
+  year={2025},
+  volume={abs/2508.00381},
+  url={https://api.semanticscholar.org/CorpusID:280416743}
+}
+```
+
